@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.1 211">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-2 {
+        fill: red;
+        font-family: BebasNeue-Regular, 'Bebas Neue';
+        font-size: 170px;
+      }
+
+      .cls-3 {
+        letter-spacing: -.03em;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(79.07 161.13) scale(.93) skewX(-20.79)"><tspan class="cls-3" x="0" y="0">v</tspan><tspan x="60.18" y="0">ampcu</tspan><tspan class="cls-1" x="418.87" y="0">l</tspan><tspan x="464.09" y="0">t</tspan></text>
+</svg>
