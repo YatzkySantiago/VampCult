@@ -99,7 +99,7 @@ header>#nav>ul>li>a{
     color: white;
 }
 #content{
-    background-image: linear-gradient(rgb(10,10,10), rgb(0,0,0)); /*temp*/
+    background-image: linear-gradient(rgb(20,20,20), rgb(0,0,0)); /*temp*/
     padding: 10%;
 }
 footer{
