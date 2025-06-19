@@ -20,7 +20,6 @@ html, body{
     display: flex;
     flex-flow: column;
 }
-
 /*HEADER (all)*/
 header{
     background-color: black;
@@ -100,13 +99,11 @@ header > #nav > ul > li > a{
     text-decoration: none;
     color: white;
 }
-
 /*CONTENT (all)*/
 #content{
     background-color: black;
     flex-grow: 1;
 }
-
 /*CONTENT (index)*/
 #content > .hero{
     position: relative;
@@ -172,8 +169,8 @@ header > #nav > ul > li > a{
 }
 /*--------------------*/
 #content > .separator{
-    height: 70px;
-    background-color: rgb(0, 0, 0);
+    height: 100px;
+    background-color: black;
 }
 /*--------------------*/
 #main-content{
@@ -181,31 +178,94 @@ header > #nav > ul > li > a{
     justify-content: center;
     align-items: center;
 }
-#main-content > #content-wrapper{
-    display: grid;
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    grid-template-areas: 
-    "title .";
-    align-items: center;
-    justify-items: center;
+#main-content > #content-wrapper {
+    width: 80%;
 }
 #main-content > #content-wrapper > .body-container{
     padding: 2%;
     text-align: start;
-    grid-area: title;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    ". title ."
+    "a b c";
+    justify-items: center;
 }
 #main-content > #content-wrapper > .body-container > h1{
+    font-size: 4.5rem;
+    font-weight: 100;
     font-family: 'bebas neue';
-    margin-bottom: 10px;
     text-align: center;
+    grid-area: title;
 }
-#main-content > #content-wrapper > .text-block{
-    font-weight: 200;
-    line-height: 1.2;
+#main-content > #content-wrapper > .body-container > .main-content-block{
+    padding: 2% 0 2% 0;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
 }
-
+#main-content > #content-wrapper > .body-container > .main-content-block > h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+#main-content > #content-wrapper > .body-container > .main-content-block > img{
+    width: 65%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+#main-content > #content-wrapper > .body-container > .main-content-block > p{
+    width: 65%;
+    flex-grow: 1;
+}
+#main-content > #content-wrapper > .body-container > .main-content-block > .box-button{
+    width: 65%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    transition:ease 0.3s;
+    border: 1px solid black;
+}
+#main-content > #content-wrapper > .body-container > .main-content-block > .box-button:hover{
+    background-color: black;
+    border: 1px solid white;
+    transition: 0.3s ease;
+}
+.box-button > a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease 0.3s;
+}
+.box-button:hover > a{
+    color: white;
+    transition: 0.3s ease;
+}
+.b1{
+    grid-area: a;
+}
+.b2{
+    grid-area: b;
+}
+.b3{
+    grid-area: c;
+}
 /*FOOTER (all)*/
 .footerLogo{
     width: 15%;
