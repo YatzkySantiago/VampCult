@@ -1,53 +1,47 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     color: white;
     font-family: 'Montserrat';
 }
-html, body{
-    height: 100%;
-    width: 100%;
+html{
+    scroll-behavior: smooth;
 }
 body{
     display: flex;
     flex-flow: column;
 }
-@font-face {
-    font-family: 'Montserrat';
-    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
-}
+
+/*HEADER (all)*/
 header{
-    width: 100%;
-    box-sizing: border-box;
-    position: fixed; /*box-sizing previene el overflow a la derecha cuando se setea una posicion fija*/
     background-color: black;
-    padding: 0 15% 0 15%;
+    padding: 1% 10% 1% 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
-    height: 10%;
     box-shadow: 0px 0px 10px 2px black;
     font-weight: 400;
 }
-header>#logoRedirect{
+header > #logoRedirect{
     width: 15%;
     position: relative;
     display: inline-block;
     cursor: pointer;
     height: auto;
 }
-header>#logoRedirect>.logo{
+header > #logoRedirect > .logo{
     width: 100%;
     display: block;
     transition: opacity 0.3s ease;
     position: relative;
     pointer-events: none;
 }
-.footerLogo{
-    width: 15%;
-}
-header>#logoRedirect>.logoRed{
+header > #logoRedirect > .logoRed{
     position: absolute;
     top: 0;
     left: 0;
@@ -60,36 +54,37 @@ header>#logoRedirect>.logoRed{
 header > #logoRedirect:hover > .logo {
     opacity: 0;
 }
-header>#logoRedirect:hover .logoRed{
+header > #logoRedirect:hover > .logoRed{
     opacity: 1;
     pointer-events: auto;
 }
-header>#nav{
+header > #nav{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 60%;
     height: 60%;
 }
-header>#nav>ul{
+header > #nav > ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80%;
 }
-header>#nav>ul>li{
+header > #nav > ul > li{
     list-style-type: none;
     border-right: 1px solid rgb(10, 10, 10);
     width: 150px;
     height: 80%;
+    transition: ease 0.3s;
 }
-header>#nav>ul>li:hover{
+header > #nav > ul > li:hover{
     background-color: rgb(10, 10, 10);
 }
-header>#nav>ul>li:nth-child(5){
+header > #nav > ul > li:nth-child(5){
     border-right: 0;
 }
-header>#nav>ul>li>a{
+header > #nav > ul > li > a{
     height: 100%;
     width: 100%;
     display: flex;
@@ -98,9 +93,23 @@ header>#nav>ul>li>a{
     text-decoration: none;
     color: white;
 }
+
+/*CONTENT (all)*/
 #content{
-    background-image: linear-gradient(rgb(20,20,20), rgb(0,0,0)); /*temp*/
-    padding: 10%;
+    background-color: black;
+}
+
+/*CONTENT (index)*/
+#content > .hero{
+    background-color: red;
+}
+#content > .hero > img{
+    width: 100%;
+}
+
+/*FOOTER (all)*/
+.footerLogo{
+    width: 15%;
 }
 footer{
     background-color: black;
@@ -109,11 +118,11 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
-footer>.contFooter{
+footer > .contFooter{
     width: 30%;
     text-align: end; 
 }
-footer>.footerSocials{
+footer > .footerSocials{
     text-align: center;
     display: flex;
     justify-content: center;
