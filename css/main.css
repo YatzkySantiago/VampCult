@@ -201,7 +201,7 @@ header > #nav > ul > li > a{
     grid-area: title;
 }
 #main-content > #content-wrapper > .body-container > .main-content-block{
-    padding: 2% 0 2% 0;
+    padding: 5% 0 5% 0;
     border: 1px solid white;
     border-radius: 10px;
     display: flex;
