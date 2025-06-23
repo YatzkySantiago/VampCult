@@ -7,38 +7,75 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <header>
-        <a href="../index.html" id="logoRedirect"><img src="../img/vampLogo.svg" alt="VAMPCULT" class="logo"><img src="../img/vampLogoRed.svg" alt="VAMPCULT" class="logo logoRed"></a>
-        <div id="nav">
-            <ul>
-                <li><a href="./newsletter.html">Newsletter</a></li>
-                <li><a href="./bio.html">Bio</a></li>
-                <li><a href="./quiz.html">Quiz</a></li>
-                <li><a href="#">Join the Cult</a></li>
-                <li><a href="./aboutUs.html">About Us</a></li>
-            </ul>
-        </div>
-    </header>
-    <div id="content">
-
-
-
-    </div>
-    <footer>
-        <div class="footerSocials contFooter">
-            <p>Follow me on:</p>
-            <div class="socialsContainer">
-                <a href="https://www.instagram.com/san.yatz/"><img src="../img/ig.png" alt="Instagram" class="icon"></a>
-                <a href="https://x.com/yatzky_s"><img src="../img/x.png" alt="X" class="icon"></a>
-                <a href="https://github.com/YatzkySantiago"><img src="../img/github.png" alt="Github" class="icon"></a>
-                <a href="https://www.linkedin.com/in/santiago-yatzky-819900301/"><img src="../img/linkedin.png" alt="Youtube" class="icon"></a>
+    <div id="main-wrapper">
+        <header>
+            <a href="../index.html" id="logoRedirect"><img src="../img/vampLogo.png" alt="VAMPCULT" class="logo"><img src="../img/vampLogoRed.png" alt="VAMPCULT" class="logo logoRed"></a>
+            <div id="nav">
+                <ul>
+                    <li><a href="./newsletter.html">Newsletter</a></li>
+                    <li><a href="./bio.html">Bio</a></li>
+                    <li><a href="./quiz.html">Quiz</a></li>
+                    <li><a href="#">Join the Cult</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                </ul>
             </div>
+        </header>
+        <div class="separator">
+            <!-- -->
         </div>
-        <div class="footerLogo"><a href="#"><img src="../img/vampLogo.svg" alt="VAMPCULT"></a></div>
-        <div class="contFooter disclaimer">
-            <p>This site is designed for educational purposes only, all content belongs to its rightful owners.</p>
-            <p>Developed by Santiago Yatzky, somewhere in Argentina.</p>
+        <div id="content">
+            <div class="title-container">
+                <h1>Join The Cult</h1>
+            </div>
+            <form id="cult-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Full Name*</label>
+                    <input type="text" id="name" required>
+
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" required>
+
+                    <label for="dob">Date of Birth*</label>
+                    <input type="date" id="dob" required>
+
+                    <label for="age">Age</label>
+                    <input type="number" id="age" readonly placeholder="Auto-calculated">
+
+                    <label for="donation">Optional Donation (USD)</label>
+                    <input type="number" id="donation" name="donation" step="0.01" min="0" placeholder="0.00">
+                    <small class="error-msg" id="donationError"></small>
+
+                    <label for="album">Favorite Carti Album</label>
+                    <input type="text" id="album">
+
+                    <label for="message">Message</label>
+                    <textarea id="message"></textarea>
+
+                    <button type="submit" class="form-button">Submit</button>
+                    <div id="form-errors"></div>
+                </div>
+            </form>
         </div>
-    </footer>
+        <div class="separator separatorb">
+            <!-- -->
+        </div>
+        <footer>
+            <div class="footerSocials contFooter">
+                <p>Follow me on:</p>
+                <div class="socialsContainer">
+                    <a href="https://www.instagram.com/san.yatz/"><img src="../img/ig.png" alt="Instagram" class="icon"></a>
+                    <a href="https://x.com/yatzky_s"><img src="../img/x.png" alt="X" class="icon"></a>
+                    <a href="https://github.com/YatzkySantiago"><img src="../img/github.png" alt="Github" class="icon"></a>
+                    <a href="https://www.linkedin.com/in/santiago-yatzky-819900301/"><img src="../img/linkedin.png" alt="Youtube" class="icon"></a>
+                </div>
+            </div>
+            <div class="footerLogo"><a href="#"><img src="../img/vampLogo.svg" alt="VAMPCULT"></a></div>
+            <div class="contFooter disclaimer">
+                <p>This site is designed for educational purposes only, all content belongs to its rightful owners.</p>
+                <p>Developed by Santiago Yatzky, somewhere in Argentina.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../JS/form.js"></script>
 </body>
 </html>

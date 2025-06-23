@@ -30,6 +30,7 @@ html, body{
     display: flex;
     flex-flow: column;
 }
+
 /*HEADER (all)*/
 header{
     background-color: black;
@@ -42,7 +43,7 @@ header{
     height: 10vh;
 }
 header > #logoRedirect{
-    width: 15%;
+    width: 12%;
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -108,11 +109,13 @@ header > #nav > ul > li > a{
     text-decoration: none;
     color: white;
 }
+
 /*CONTENT (all)*/
 #content{
     background-color: black;
     flex-grow: 1;
 }
+
 /*CONTENT (index)*/
 #content > .hero{
     position: relative;
@@ -334,14 +337,10 @@ h1{
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     height: 80vh;
-    overflow-y: hidden;
+    overflow-y: scroll;
     position: relative;
-    transition: overflow 0.3s ease;
     box-sizing: border-box;
     scrollbar-gutter: stable;
-}
-#news-container > .tweets-container:hover{
-    overflow-y: scroll;
 }
 .news-box > .box-wrapper{
     display: flex;
@@ -356,6 +355,175 @@ h1{
 }
 .news-box > .box-wrapper > .text-box{
     width: 70%;
+}
+
+/*Bio content*/
+#bio-wrapper{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.sidebar{
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    width: 10%;
+    height: 60vh;
+    border-right: 1px solid white;
+    border-radius: 10px;
+}
+.sidebar > .album-img{
+    width: 60%;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.sidebar > .album-img > img{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.album-img:hover img {
+    transform: scale(1.05);
+}
+.bio-main-content{
+    height: 60vh;
+    width: 70%;
+    padding: 10px 100px 10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.bio-main-content > .image-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    align-items: center;
+}
+.bio-main-content > .image-wrapper > img{
+    width: 20%;
+    border-radius: 10px;
+}
+.bio-text-wrapper{
+    width: 90%;
+    margin-bottom: 50px;
+}
+/*Join The Cult*/
+#cult-form {
+    display: flex;
+    justify-content: center;
+}
+#cult-form .form-group {
+    width: 60%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+}
+input.error, textarea.error {
+    border-color: crimson;
+    background-color: rgb(109, 22, 39);
+    color: white;
+}
+#form-errors p {
+    color: crimson;
+}
+.form-button{
+    height: 40px;
+    width: 120px;
+    background-color: white;
+    border: 0;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.form-button:hover{
+    background-color: black;
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transition: 0.3s ease;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+/*about us*/
+#about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10%;
+    gap: 5%;
+    margin-bottom: 100px;
+}
+.about-left {
+    width: 60%;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: white;
+}
+.about-left blockquote {
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+    color: crimson;
+    margin-bottom: 20px;
+    border-left: 3px solid crimson;
+    padding-left: 15px;
+}
+.about-left p {
+    margin-bottom: 20px;
+}
+.about-right {
+    width: 35%;
+    position: relative;
+}
+.img-overlay {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img-overlay img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    filter: brightness(0.8) contrast(1.1);
+    transition: filter 0.3s ease;
+}
+.img-overlay:hover img {
+    filter: brightness(1) contrast(1.3);
+}
+.img-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 /*FOOTER (all)*/
