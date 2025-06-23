@@ -352,6 +352,7 @@ h1{
 .news-box > .box-wrapper > img{
     width: 15%;
     margin: 10px;
+    border-radius: 10px;
 }
 .news-box > .box-wrapper > .text-box{
     width: 70%;
