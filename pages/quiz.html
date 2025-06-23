@@ -7,38 +7,52 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <header>
-        <a href="../index.html" id="logoRedirect"><img src="../img/vampLogo.png" alt="VAMPCULT" class="logo"><img src="../img/vampLogoRed.png" alt="VAMPCULT" class="logo logoRed"></a>
-        <div id="nav">
-            <ul>
-                <li><a href="./newsletter.html">Newsletter</a></li>
-                <li><a href="./bio.html">Bio</a></li>
-                <li><a href="#">Quiz</a></li>
-                <li><a href="./joinTheCult.html">Join the Cult</a></li>
-                <li><a href="./aboutUs.html">About Us</a></li>
-            </ul>
-        </div>
+    <div id="main-wrapper">
+        <header>
+            <a href="../index.html" id="logoRedirect"><img src="../img/vampLogo.png" alt="VAMPCULT" class="logo"><img src="../img/vampLogoRed.png" alt="VAMPCULT" class="logo logoRed"></a>
+            <div id="nav">
+                <ul>
+                    <li><a href="./newsletter.html">Newsletter</a></li>
+                    <li><a href="./bio.html">Bio</a></li>
+                    <li><a href="#">Quiz</a></li>
+                    <li><a href="./joinTheCult.html">Join the Cult</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                </ul>
+            </div>
         </header>
-    <div id="content">
-
-
-
-    </div>
-    <footer>
-        <div class="footerSocials contFooter">
-            <p>Follow me on:</p>
-            <div class="socialsContainer">
-                <a href="https://www.instagram.com/san.yatz/"><img src="../img/ig.png" alt="Instagram" class="icon"></a>
-                <a href="https://x.com/yatzky_s"><img src="../img/x.png" alt="X" class="icon"></a>
-                <a href="https://github.com/YatzkySantiago"><img src="../img/github.png" alt="Github" class="icon"></a>
-                <a href="https://www.linkedin.com/in/santiago-yatzky-819900301/"><img src="../img/linkedin.png" alt="Youtube" class="icon"></a>
+        <div class="separator">
+            <!-- -->
+        </div>
+        <div id="content">
+            <div id="quiz-container">
+                <h1 id="quiz-title">CARTI QUIZ</h1>
+                <p id="quiz-question">Which song is this?</p>
+                <audio id="quiz-audio" controls></audio>
+                <div id="quiz-options" class="grid-options">
+                    <!-- Los botones se insertan desde JS -->
+                </div>
             </div>
         </div>
-        <div class="footerLogo"><a href="#"><img src="../img/vampLogo.svg" alt="VAMPCULT"></a></div>
-        <div class="contFooter disclaimer">
-            <p>This site is designed for educational purposes only, all content belongs to its rightful owners.</p>
-            <p>Developed by Santiago Yatzky, somewhere in Argentina.</p>
+        <div class="separator separatorb">
+            <!-- -->
         </div>
-    </footer>
+        <footer>
+            <div class="footerSocials contFooter">
+                <p>Follow me on:</p>
+                <div class="socialsContainer">
+                    <a href="https://www.instagram.com/san.yatz/"><img src="../img/ig.png" alt="Instagram" class="icon"></a>
+                    <a href="https://x.com/yatzky_s"><img src="../img/x.png" alt="X" class="icon"></a>
+                    <a href="https://github.com/YatzkySantiago"><img src="../img/github.png" alt="Github" class="icon"></a>
+                    <a href="https://www.linkedin.com/in/santiago-yatzky-819900301/"><img src="../img/linkedin.png" alt="Youtube" class="icon"></a>
+                </div>
+            </div>
+            <div class="footerLogo"><a href="#"><img src="../img/vampLogo.png" alt="VAMPCULT"></a></div>
+            <div class="contFooter disclaimer">
+                <p>This site is designed for educational purposes only, all content belongs to its rightful owners.</p>
+                <p>Developed by Santiago Yatzky, somewhere in Argentina.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../JS/main.js"></script>
 </body>
 </html>

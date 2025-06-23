@@ -415,6 +415,7 @@ h1{
     width: 90%;
     margin-bottom: 50px;
 }
+
 /*Join The Cult*/
 #cult-form {
     display: flex;
@@ -526,9 +527,69 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     letter-spacing: 1px;
 }
 
+/*QUIZ*/
+#quiz-container {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    min-height: 70vh;
+}
+#quiz-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+#quiz-question {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+#quiz-audio {
+    margin: 10px auto 30px auto;
+    display: block;
+    width: 60%;
+}
+.grid-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.quiz-option {
+    padding: 15px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border: 0;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+.quiz-option:hover {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transition: all 0.3s ease;
+}
+.quiz-option.correct {
+    background-color: green;
+    color: white;
+}
+.quiz-option.incorrect {
+    background-color: crimson;
+    color: white;
+}
+
 /*FOOTER (all)*/
 .footerLogo{
-    width: 15%;
+    width: 10%;
+}
+.footerLogo > a > img{
+    width: 100%;
 }
 footer{
     margin-top: auto;
